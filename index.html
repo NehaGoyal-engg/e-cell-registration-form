@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e cell registration page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ContentBox">
+
+        <!--header section-->
+        <div class="classHeader">
+             <div class="cell">
+                <p>E-cell Event</p>
+           </div>
+
+          <h1 class="heading">Startup pitch competition</h1>
+          <div class="badge"><badge>IDEA</badge>
+          <badge> →</badge>
+          <badge>PITCH</badge>
+          <badge> →</badge>
+          <badge>BUILD</badge>
+        </div>
+           <div>
+            <p class="headPara">Fill out these details to register in pitch competition</p>
+           </div>
+        </div>
+           
+         <!--registration form section-->
+          <form id="registrationForm">
+            <!--full name-->
+            <div class="info-form">
+                <label for="fullName"> Full Name <span>*</span> </label>
+                <input type="text" id="fullName" name="fullName" placeholder="Sundar Pichai">
+                <div id="fullError" class="error-message"></div>
+            </div>
+
+            <!--email id-->
+            <div class="info-form">
+                <label for="email"> Email Address <span>*</span> </label>
+                <input type="email" id="email" name="email" placeholder="sundar321@gmail.com">
+                <div id="emailError" class="error-message"></div>
+            </div>
+
+            <!--phone number-->
+            <div class="info-form">
+                <label for="phone"> Phone Number <span>*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder ="1234567890">
+                <div id="phoneError" class="error-message"></div>
+            </div>
+
+            <!--team name-->
+            <div class="info-form">
+                <label for="teamName"> Team Name <span>*</span></label> 
+                <input type="text" id="teamName" name="teamName" placeholder="The Prime Movers">
+                <div id="teamError" class="error-message"></div>
+            </div>
+
+            <!--startup idea-->
+               <div class="info-form">
+                <label for="startupIdea"> Explain your idea briefly <span>*</span></label>
+                <textarea id="startupIdea" name="startupIdea" placeholder="state your startup idea and explain it briefly"></textarea>
+                <div id="ideaError" class="error-message"></div>   
+            </div>
+
+               <!--submit button-->
+             <button type="submit" class="submit-Button"> Submit registration form</button>
+
+          </form>
+
+          <!--suceess message-->
+              <div id="successMessage" class="suc-Box hidden" >
+                    <div class="success-icon">✓</div>
+                    <h3 class="suc-Heading">Registration Successful</h3>
+                    <p  class="suc-Para">Congratulations 😊!! You successfully registered for startup pitch competition... We will contact you soon via email...</p>
+              </div>          
+    </div>
+
+    <script src="reg_page.js"></script>
+</body>
+</html>
