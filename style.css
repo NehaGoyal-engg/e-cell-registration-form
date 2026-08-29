@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sora;
     box-sizing: border-box;
 }
 
@@ -29,11 +29,13 @@ body{
      border-top: 2px solid #159a8a;
 }
 
+/* e cell event heading  */
 .classHeader{
   text-align: center;
   margin-bottom: 20px;
 
 }
+
 .cell{
      background-color:rgba(20, 184, 166, 0.15);
     color:#5eead4;
@@ -46,20 +48,24 @@ body{
     margin-bottom: 10px;
 }
 
+/* main heading  */
 .heading{
     margin-bottom: 13px;
 }
 
+/* badges */
 .badge{
     margin-bottom: 10px;
     font-weight: 500;
 }
 
+/* paragraph */
 .headPara{
     font-weight: 600;
     font-size: 18px;;
 }
 
+/* form information */
 .info-form{
     margin-bottom: 20px;
 }
@@ -78,13 +84,22 @@ span{
 
 input,textarea{
       background-color:#111f2b;
-    border:1px solid #657985;
+    border:2px solid transparent;
     width:100%;
     border-radius: 10px;
     padding: 15px 20px;
    font-size: 16px;
    outline: none;
    color: rgb(218, 233, 247);
+}
+
+.info-form:hover label {
+    color: #f8fafc; 
+}
+
+.info-form:hover input,
+.info-form:hover textarea {
+    border:2px dotted #159a8a;
 }
 
 input::placeholder, textarea::placeholder {
@@ -96,12 +111,13 @@ textarea{
     min-height: 120px;
 }
 
+/* submit button  */
 .submit-Button{
-      background-color:#159a8a;
+      background-color:#189e8e;
     width:100%;
     padding: 15px 9px;
     font-size: 20px;
-    border:none;
+    border:2px solid transparent;
     border-radius: 10px;
     font-weight: 700;
     color:white;
@@ -109,13 +125,16 @@ textarea{
 }
 
 .submit-Button:hover{
-      background-color:#117c70; ;
+      background-color:#148f81;
+      border: 2px dotted #0cdbc3
 }
 
 .submit-Button:active{
-transform: scale(0.99);
+transform: scale(0.98);
+   background-color:#107569;
 }
 
+/* error message  */
 .error-message{
     color:#f43f5e;
     font-size: 15px;
@@ -127,6 +146,7 @@ input.error,textarea.error{
     box-shadow: 0 0 0 2px rgba(244,63,94,0.2);
 }
 
+/* complete registation message  */
 .suc-Box{
     text-align: center;
     padding: 25px 0;
